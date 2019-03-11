@@ -1,0 +1,272 @@
+body {
+
+}
+
+.polosa {
+	background-color: rgb(255,225,95);
+	height: 33px;
+	width: 100%;
+}
+.top {
+	height: 130px;
+}
+.polosa p {
+	text-align: center;
+}
+.logo {
+	margin-top: 40px;
+} 
+.logo .text {
+	position: relative;
+	float: right;
+	top: -90px;
+	line-height: 21px;
+}
+.vopros {
+	top: -160px;
+}
+.vopros ul li {
+	list-style: none;
+	display: inline;
+	margin-right: 20px;
+}
+.cabinet {
+	top: -212px;
+	background-color: rgb(0,137,225);
+	padding: 13px;
+	transition-duration: .5s;
+}
+.cabinet a {
+	color: white;
+	margin-left: 10px;
+}
+.cabinet::before {
+	content: url("../images/key.png");
+	margin-left: 25px;
+}
+.cabinet:hover {
+	background-color: rgb(6, 103, 165);
+	cursor: pointer;
+	transition-duration: .5s;
+}
+.lang ul li {
+	list-style: none;
+	display: inline;
+	margin-left: 5px;
+}
+.lang {
+	top: -250px;
+}
+.menu ul li {
+	display: inline;
+	list-style: none;
+	margin-right: 20px;
+}
+.menu ul li a {
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+}
+.menu {
+	top: -215px;
+}
+
+.slick-next {
+	right: 0px !important;
+	z-index: 1;
+}
+.slick-prev {
+	left: 0px !important;
+	z-index: 1;
+}
+.qwer {
+	height: 610px;
+}
+.qwer img {
+	width: 100%;
+	height: 610px;
+}
+.qwer div {
+	width: 100%;
+}
+.search {
+	position: relative;
+	top: -263px;
+	z-index: 1;
+}
+.srchtext {
+	top: 100px;
+	display: none;
+}
+.srchf {
+	opacity: 0;
+	width: 5px;
+	transition-duration: .5s;
+}
+.search:hover .srchf {
+	transition-duration: .5s;
+	width: 155px;
+	opacity: 1;
+
+}
+.srchf:focus {
+	transition-duration: .5s;
+	width: 155px;
+	opacity: 1;
+}
+.block {
+	height: 216px;
+	position: relative;
+	margin-top: 40px;
+}
+.block-1,.block-2 {
+	position: relative;
+	display: inline-flex;
+	margin-top: 0px;
+}
+.left img {
+	wight: 263px;
+	height: 182px;
+}
+.left {
+	margin-top: 40px;
+}
+.left div {
+	display: inline;
+	position: relative;
+	float: left;
+}
+.left h3 {
+	margin-bottom: 30px;
+	margin-left: 15px;
+}
+.left div p:nth-child(odd) {
+	font-weight: 800;
+}
+.left div img {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.left div p {
+	margin-bottom: 5px;
+}
+.left div p:nth-child(even) {
+	font-style: italic;
+}
+.center {
+	float: left;
+	position: relative;
+	top: -380px;
+	background: rgb(251,251,251);
+	padding-bottom: 60px;
+	padding-top: 25px;
+}
+.h3, h3 {
+	font-weight: bold;
+}
+.nws {
+	margin-top: 10px;
+	border-bottom: solid grey 1px;
+}
+.nws p:nth-child(1) {
+	color: #b0adad;
+}
+.nws p:nth-child(3) {
+	color: #8f8d8d;
+}
+.center a {
+	top: 30px;
+	position: relative;
+}
+.right {
+	float: left;
+	position: relative;
+	top: -380px
+}
+.right div {
+	background: rgb(251,251,251);
+	padding: 35px 25px 75px 35px;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.podpis {
+	padding-bottom: 35px !important;
+}
+.login h3 {
+	margin-bottom: 20px;
+}
+.login a {
+	background: #4343f9;
+	padding: 15px 30px 15px 30px;
+	color: white;
+	font-size: 15px;
+	position: relative;
+	top: 25px;
+	transition: .5s;
+}
+.login a:hover {
+	background: rgb(6, 103, 165);
+	transition: .5s;
+}
+.login .inp {
+	margin-top: 5px;
+	width: 100%;
+	height: 35px;
+}
+.block img {
+	width: 100%;
+	height: 100%;
+}
+.block {
+	overflow: hidden;
+}
+.block p {
+	position: relative;
+	top: -195px;
+	margin-left: 20px;
+}
+.block a {
+	text-decoration: none;
+}
+.block p:nth-child(2) {
+	color: black;
+	font-weight: 800;
+	text-decoration: underline;
+	font-size: 1.1em;
+}
+.block p:nth-child(3) {
+	margin-bottom: 25px;
+
+}
+.block p:nth-child(4) {
+	position: relative;
+	top: -125px;
+	transition: .5s;
+}
+.block p a {
+	background: #4f4ffc;
+	padding: 15px;
+	color: white;
+	opacity: 1;
+
+}
+.block:hover p:nth-child(4) {
+	top: -195px;
+	transition: 0.5s;
+}
+.podpis input[type="submit"] {
+	background: transparent url(../images/strl.png) no-repeat center;
+	text-indent: -1000em;
+	background-color: #0088e1;
+	height: 45px;
+	width: 48px;
+	border-radius: 0px;
+	top: -1px;
+	position: relative;
+	left: -6px;	
+}
+.podpis input[type="text"] {
+	height: 45px;
+	border-radius: 0px;
+}
