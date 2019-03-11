@@ -1,5 +1,5 @@
 body {
-
+    margin: 0 auto;
 }
 
 .polosa {
@@ -71,11 +71,11 @@ body {
 	top: -215px;
 }
 
-.slick-next {
+.qwer .slick-next {
 	right: 0px !important;
 	z-index: 1;
 }
-.slick-prev {
+.qwer .slick-prev {
 	left: 0px !important;
 	z-index: 1;
 }
@@ -124,12 +124,15 @@ body {
 	display: inline-flex;
 	margin-top: 0px;
 }
-.left img {
-	wight: 263px;
-	height: 182px;
-}
-.left {
+.left, .center, .right {
 	margin-top: 40px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+.left img {
+	wigth: 263px;
+	height: 182px;
 }
 .left div {
 	display: inline;
@@ -156,7 +159,6 @@ body {
 .center {
 	float: left;
 	position: relative;
-	top: -380px;
 	background: rgb(251,251,251);
 	padding-bottom: 60px;
 	padding-top: 25px;
@@ -181,7 +183,6 @@ body {
 .right {
 	float: left;
 	position: relative;
-	top: -380px
 }
 .right div {
 	background: rgb(251,251,251);
@@ -269,4 +270,33 @@ body {
 .podpis input[type="text"] {
 	height: 45px;
 	border-radius: 0px;
+}
+.reklama {
+	width: 100%;
+	height: 260px;
+}
+.bottom {
+	bottom: 0px;
+	position: relative;
+}
+.bottom div:nth-child(even) {
+	background-color: #fbfbfb;
+}
+.bottom h3 {
+	border-bottom: solid 1px #c6c1c1;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+.banner-1 {
+	padding: 0px 60px 5px 60px;
+}
+.bottom-1 {
+	margin-top: 40px;
+}
+.bottom-1 div p {
+	margin-top: 20px;
+}
+.bottom-1 div {
+	padding-right: 40px;
+	margin-right: 20px;
 }
