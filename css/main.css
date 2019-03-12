@@ -1,11 +1,23 @@
 body {
     margin: 0 auto;
 }
-
+@font-face {
+    font-family: Rlight;
+    src: url(../fonts/rlight.ttf);
+   }
+@font-face {
+    font-family: Rmedium;
+    src: url(../fonts/rmedium.ttf);
+   }
+@font-face {
+    font-family: Rbold;
+    src: url(../fonts/rregular.ttf);
+   }
 .polosa {
 	background-color: rgb(255,225,95);
 	height: 33px;
 	width: 100%;
+	font-family: Rlight;
 }
 .top {
 	height: 130px;
@@ -21,9 +33,11 @@ body {
 	float: right;
 	top: -90px;
 	line-height: 21px;
+	font-family: Rlight;
 }
 .vopros {
 	top: -160px;
+	font-family: Rlight;
 }
 .vopros ul li {
 	list-style: none;
@@ -35,6 +49,7 @@ body {
 	background-color: rgb(0,137,225);
 	padding: 13px;
 	transition-duration: .5s;
+	font-family: Rlight;
 }
 .cabinet a {
 	color: white;
@@ -56,6 +71,7 @@ body {
 }
 .lang {
 	top: -250px;
+	font-family: Rlight;
 }
 .menu ul li {
 	display: inline;
@@ -65,19 +81,30 @@ body {
 .menu ul li a {
 	text-decoration: none;
 	color: black;
-	font-weight: 600;
+	font-weight: 500;
 }
 .menu {
 	top: -215px;
+	font-family: Rmedium;
 }
 
 .qwer .slick-next {
-	right: 0px !important;
+	right: 15px !important;
 	z-index: 1;
 }
 .qwer .slick-prev {
-	left: 0px !important;
+	left: 15px !important;
 	z-index: 1;
+}
+.slick-prev::before, .slick-next::before {
+	font-size: 40px !important;
+}
+.qwer .slick-dots li button::before {
+	font-size: 15px;
+}
+.qwer .slick-dots li button {
+	top: -15px;
+	position: relative;
 }
 .qwer {
 	height: 610px;
@@ -124,11 +151,21 @@ body {
 	display: inline-flex;
 	margin-top: 0px;
 }
+.block p:nth-child(2) {
+	font-family: Rmedium;
+}
+.block p:nth-child(3) {
+	font-family: Rlight;
+}
+.block p:nth-child(4) {
+	font-family: Rlight;
+}
 .left, .center, .right {
 	margin-top: 40px;
 	overflow: hidden;
 	position: relative;
 	float: left;
+	margin-bottom: 0px;
 }
 .left img {
 	wigth: 263px;
@@ -218,6 +255,7 @@ body {
 .block img {
 	width: 100%;
 	height: 100%;
+	transition: .5s;
 }
 .block {
 	overflow: hidden;
@@ -242,19 +280,40 @@ body {
 }
 .block p:nth-child(4) {
 	position: relative;
-	top: -125px;
+	top: -90px;
 	transition: .5s;
+}
+.block-1 .block:nth-child(1) p {
+	color: white !important;
+}
+.block-2 .block:nth-child(2) p {
+	color: white;
+}
+.block-1 .block:nth-child(3) p {
+	margin-right: 45%;
+} 
+.block-2 .block:nth-child(2) p {
+	margin-right: 45%;
 }
 .block p a {
 	background: #4f4ffc;
 	padding: 15px;
 	color: white;
 	opacity: 1;
+	transition: .5s;
 
 }
 .block:hover p:nth-child(4) {
 	top: -195px;
 	transition: 0.5s;
+}
+.block p a:hover  {
+	background: rgb(6, 103, 165);
+	transition: .5s;
+}
+.block:hover img {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: .5s;
 }
 .podpis input[type="submit"] {
 	background: transparent url(../images/strl.png) no-repeat center;
@@ -270,17 +329,18 @@ body {
 .podpis input[type="text"] {
 	height: 45px;
 	border-radius: 0px;
+	float: left;
 }
 .reklama {
 	width: 100%;
 	height: 260px;
 }
 .bottom {
-	bottom: 0px;
 	position: relative;
-}
-.bottom div:nth-child(even) {
-	background-color: #fbfbfb;
+	overflow: hidden;
+	clear: both;
+	background: #fbfbfb;
+	padding-top: 30px;
 }
 .bottom h3 {
 	border-bottom: solid 1px #c6c1c1;
@@ -296,7 +356,180 @@ body {
 .bottom-1 div p {
 	margin-top: 20px;
 }
-.bottom-1 div {
+/*.bottom-1 div {
 	padding-right: 40px;
 	margin-right: 20px;
+}*/
+.slick-prev {
+	left: 15px !important;
+
+}
+.banner-1 .slick-prev::before, .slick-next::before {
+	color: #bcbcbc !important;
+}
+.banner-1 .slick-next {
+	right: 20px !important;
+}
+.bottom-2 {
+	margin-top: 40px;
+	background: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.bottom-2 .banner-1 {
+	background: white;
+}
+.copy span {
+	font-weight: 550;
+}
+.copy {
+	margin-bottom: 40px;
+}
+.footer .center {
+	padding-top: 0px;
+}
+.footer {
+	font-family: rlight;
+}
+.footer ul {
+	list-style: none;
+	margin-top: -30px;
+}
+.footer .email p {
+	font-weight: 300 !important;
+}
+.footer .email p a {
+	text-decoration: underline;
+}
+.footer .email2 a {
+	color: #2e2b2f;
+	font-style: normal;
+}
+.footer .center ul li {
+	margin-bottom: 10px;
+	float: left;
+	width: 50%;
+	text-decoration: underline;
+
+}
+.footer .center ul li a {
+	color: #2e2b2f;
+}
+.footer .center ul li:nth-child(even) {
+	float: right;
+}
+.footer .right {
+	margin-top: 80px;
+}
+.footer {
+	margin-top: 30px;
+	float: left;
+	overflow: hidden;
+}
+.footer .right p {
+	margin-left: 33%;
+	line-height: 6px;
+	margin-top: 3px;
+}
+.footer .right img {
+	float: left;
+	position: relative;
+}
+.slick-prev::before {
+    content: url(../images/left.png) !important;
+}
+.slick-next::before {
+	content: url(../images/right.png) !important;
+}
+.slick-prev, .slick-next {
+	width: 35px !important;;
+	height: 35px !important;;
+}
+.bottom div .slick-prev::before {
+	content: url(../images/lleft.png) !important;
+}
+.bottom div .slick-next::before {
+	content: url(../images/rright.png) !important;
+}
+.bottom div .slick-initialized .slick-slide {
+	padding-left: 50px;
+}
+#page2top {
+	background: rgb(250,250,250);
+	overflow: hidden;
+	height: 200px;
+}
+.full {
+	float: left;
+}
+.date {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.news h2 {
+	margin-bottom: 30px;
+}
+.news img {
+	margin-bottom: 40px;
+}
+.menur ul li {
+	list-style: none;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: Rmedium;
+	padding-left: 25px;
+	padding-right: 30px;
+	margin-top: 2px;
+	text-decoration: underline;
+	text-decoration-color: black;
+	font-size: 17px;
+	transition-duration: .5s;
+	position: relative;
+	left: 0px;
+
+
+}
+.menur ul li:hover {
+	left: -5px;
+	transition-duration: .5s;
+}
+.menur ul {
+	padding-left: 0px;
+}
+#rs div:nth-child(1) {
+	padding: 0px;
+	background-color: transparent;
+}
+.menur ul li:nth-child(1) {
+	background-color: #5f44cd;
+	text-decoration-color: white;
+}
+.menur ul li:nth-child(2) {
+	background-color: #ff6600;
+}
+.menur ul li:nth-child(3) {
+	background-color: #cf171f;
+	text-decoration-color: white;
+}
+.menur ul li:nth-child(4) {
+	background-color: #fccd04;
+}
+.menur ul li:nth-child(5) {
+	background-color: #9ddaee;
+}
+.menur ul li:nth-child(6) {
+	background-color: #a8f873;
+}
+.menur ul li:nth-child(3) a {
+	color: white;
+}
+.menur ul li:nth-child(1) a {
+	color: white;
+}
+.menur ul li a {
+	color: black;
+}
+#secfoot {
+	background: #fbfbfb;
 }
